@@ -61,7 +61,7 @@ class App extends Component {
     reserv.personCount = person
     console.log(reserv)
 
-    fetch(process.env.GETRESERVATION_URL, {
+    fetch('https://reservation-coders.herokuapp.com/api/reservation', {
       method: 'POST',
       headers: new Headers({
       'Access-Control-Allow-Origin':'*',
@@ -84,7 +84,7 @@ class App extends Component {
     reserv.personCount = person
     reserv.hour = hour
 
-    fetch(process.env.ADDRESERVATION_URL, {
+    fetch('https://reservation-coders.herokuapp.com/api/reservation/add', {
       method: 'POST',
       headers: new Headers({
       'Access-Control-Allow-Origin':'*',
