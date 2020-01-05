@@ -1,0 +1,149 @@
+body{
+    background-image: url(../public/restaurant.jpg);
+    width: 100%;
+}
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.4px;
+    font-style: italic;
+}
+.header{    
+    text-align: center; 
+    text-shadow: 3px 2px grey;  
+    margin-bottom: 5%;
+}
+.confirmation, .messWarning{
+    text-align: center;  
+    width: 60%;
+    margin: 0 15%;
+    padding: 5%;
+    border: black solid 2px;
+    text-shadow: 0 2px 1px red;
+}
+.messWarning{
+    padding: 1%;
+    text-transform: uppercase;
+    width: 50%;
+    margin: 5% 23%;
+    
+}
+.confirmation h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.reservation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.reservation > div {
+    width: 31%;
+    margin: 1%;
+    text-align: center;
+}
+@media (max-width: 750px) {
+    .reservation > div {
+        width: 40%;
+    }
+}
+@media (max-width: 600px) {
+    .reservation > div {
+        width: 60%;
+    }
+    .reservation{
+        justify-content: center
+    }
+}
+
+.react-calendar{
+    border: black solid 2px;
+    width: 100%;
+    background: inherit;
+    padding: 2%;
+    font-size: 1rem;
+}
+.react-calendar button{
+    font-size: 0.9rem;
+}
+.person-container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-right:20%;
+    margin-left:20%;
+    margin-bottom: 10%;
+}
+.person-container select{
+    width: 40%;
+    margin-top: 5%;
+    font-size: 0.9rem;
+}
+
+.person-container p {
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+.hours-container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-right:5%;
+    margin-left:5%;
+}
+.hour-tile{
+    border: solid 2px black;
+    width: 20%;  
+    margin: 3%; 
+    padding: 2%;
+    font-size: 0.9rem;
+}
+.form-container{
+    text-align: left;
+    margin: 2%;
+    margin-bottom: 3%;
+}
+.form-item {
+    margin-left: 10%;
+}
+.form-item p {
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+.form-item input{
+    border: solid black 1.5px;
+    background: whitesmoke;
+    width: 80%
+}
+input[type=submit]{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 2%;
+    margin-left: 60%;
+}
+.confirm, .confirmation button, .availability, .messWarning button{
+    text-shadow: 1px 1px 1px #343536;
+    border: 2px solid rgb(16, 18, 19);
+    border-radius: 6px; 
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, rgb(53, 49, 49), rgb(150, 149, 149));
+    color: white;
+    padding: 1.5%;
+    width: 30%;
+    margin:auto;
+    display:block;
+    margin-top: 2%;
+    opacity: 70%;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.availability{
+    width: 50%;
+}
+.hidden{
+    display : none;
+}
